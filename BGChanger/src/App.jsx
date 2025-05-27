@@ -4,6 +4,7 @@ import {useState} from 'react'
 function App() {
 
  let [color,setColor] = useState("grey");
+ 
 return (
      <>
        <div className=" h-screen duration-200"
