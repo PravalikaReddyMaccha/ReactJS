@@ -8,14 +8,13 @@ import NavBar from  './Components/NavBar';
 import About from  './Components/About';
 import Contact from './Components/Contact';
 import Home from './Components/Home';
-import Github from './Components/Github';
+import Github,{githubInfoLoader} from './Components/Github';
 import User from './Components/User';
 import Layout from './Layout';
 import { useParams } from 'react'
 
 
 const router = createBrowserRouter(
-  // <Layout/>
   createRoutesFromElements(
      <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
@@ -24,7 +23,7 @@ const router = createBrowserRouter(
       <Route path='user' element={<User />} />
       <Route path='user/:userid' element={<User />} />
       <Route 
-      // loader={githubInfoLoader}
+      loader={githubInfoLoader}
       path='github' 
       element={<Github />}
        />
