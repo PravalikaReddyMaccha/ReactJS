@@ -1,6 +1,4 @@
-import {useState} from 'react'
 import {useSelector,useDispatch} from 'react-redux'
-import {removeTodo} from '../features/TodoSlice.js'
 import TodoItem from './TodoItem.jsx'
 function Todo() {
 
