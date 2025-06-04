@@ -5,8 +5,11 @@ function App() {
   
   return (
     <>
-     <AddToDo/>
-     <Todo/>
+     <div className="bg-[#172842] min-h-screen p-10">
+        <AddToDo/>
+        <Todo/>
+     </div>
+    
     </>
   )
 }
